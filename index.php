@@ -9,6 +9,7 @@
   //turn on error reporting
   ini_set('display_errors', 1);
   error_reporting(E_ALL);
+  include("functions.php")
   ?>
 <!doctype html>
 <html lang="en">
@@ -22,14 +23,12 @@
 <body>
   <?php
     echo "<h2>PHP Array Practice</h2><br>";
-
+    //an array of numbers
     $numbers = [7,9,8,9,8,8,6];
-    function printArr($arr){
-      foreach($arr as $value){
-        echo "<p>$value<p>";
-      }
-    }
+    echo "<div>";
+    //print all the values in the numbers variable
     printArr($numbers);
+    echo "</div>"
   ?>
 </body>
 </html>
