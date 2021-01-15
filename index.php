@@ -26,9 +26,16 @@
     //an array of numbers
     $numbers = [7,9,8,9,8,8,6];
     echo "<div>";
+    echo "<p>Line by line printout of the array:</p>";
     //print all the values in the numbers variable
     printArr($numbers);
-    echo "</div>"
+    echo "</div>";
+
+    echo "<div>";
+    echo "<br>";
+    echo "<p>Largest Number in the Array: </p>";
+    echo largest($numbers);
+    echo "</div>";
   ?>
 </body>
 </html>
