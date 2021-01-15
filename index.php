@@ -42,6 +42,12 @@
     echo "<p>Duplicates removed from the array: </p>";
     echo removeDups($numbers);
     echo "</div>";
+
+    echo "<div>";
+    echo "<br>";
+    echo "<p>Turned Array into an Associative Array: </p>";
+    echo distribution($numbers);
+    echo "</div>";
   ?>
 </body>
 </html>

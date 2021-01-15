@@ -22,4 +22,41 @@
     printArr($newArray);
 
   }
+  function distribution($arr){
+    //get the number of duplicates to create values
+    $vals = array_count_values($arr);
+
+    //turn vals array into an array of just values
+    $vals = array_values($vals);
+
+    //get uniques from the array to create keys
+    $keys = array_unique($arr);
+
+    //turn keys array into an array of just values
+    $keys = array_values($keys);
+
+    //combine both arrays into an associative array
+    $result = array_combine($keys, $vals);
+
+    //sort the array by the key value
+    ksort($result);
+
+    //initate count
+    $count = 0;
+
+    //create output string
+    $output = "[";
+
+    //iterate through the array
+    foreach($result as $i => $val){
+      $count++; //increase count at the beginning of each loop
+      if($count == count($result)){ //if the $count equals the length of the array change the concatenation
+        $output .= $i."=>".$val."]";
+      } else{
+        $output .= $i."=>".$val.", ";
+      }
+    }
+    //echo the output
+    echo "<p>$output</p>";
+  }
 
