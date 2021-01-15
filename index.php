@@ -36,6 +36,12 @@
     echo "<p>Largest Number in the Array: </p>";
     echo largest($numbers);
     echo "</div>";
+
+    echo "<div>";
+    echo "<br>";
+    echo "<p>Duplicates removed from the array: </p>";
+    echo removeDups($numbers);
+    echo "</div>";
   ?>
 </body>
 </html>

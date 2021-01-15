@@ -15,3 +15,11 @@
     $largest = array_pop($arr);
     echo "<p>$largest</p>";
   }
+
+  //function that removes duplicate numbers form the array
+  function removeDups($arr){
+    $newArray = array_unique($arr);
+    printArr($newArray);
+
+  }
+
